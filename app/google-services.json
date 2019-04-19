@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "43480210617",
+    "firebase_url": "https://ziifydeliveryboy.firebaseio.com",
+    "project_id": "ziifydeliveryboy",
+    "storage_bucket": "ziifydeliveryboy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43480210617:android:2a8e469b9e02e58f",
+        "android_client_info": {
+          "package_name": "activities.ziffytech.code"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43480210617-oo73utrlpmihfeli4am88gs7vkdv28h1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "activities.ziffytech.code",
+            "certificate_hash": "9fac73a90591fd33203856437db792d6042ba597"
+          }
+        },
+        {
+          "client_id": "43480210617-ddc137nlqkaoq98o50gq2b3u56o5h8r0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9_11gAyhF2h-I8qpFTaD1qCzfg9fmEw8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43480210617-ddc137nlqkaoq98o50gq2b3u56o5h8r0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

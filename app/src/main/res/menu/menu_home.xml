@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/nav_share"
+        android:title="Share"
+        android:enabled="true"
+        android:icon="@drawable/ic_fingerprint_black_24dp"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings_applications_black_24dp"
+        app:showAsAction="ifRoom"/>
+</menu>

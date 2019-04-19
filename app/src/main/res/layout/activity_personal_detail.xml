@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/fb_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/thumbnail_image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="@dimen/dimen_2dp"
+                android:layout_gravity="center_horizontal"
+               />
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:id="@+id/txtv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Email"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColorHint="@color/light_grey"
+                android:textSize="12dp"/>
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:editable="false"
+                    android:id="@+id/txtv_contact_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="12dp"/>
+
+
+                <TextView
+                    android:id="@+id/txtv_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/contact"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:layout_marginBottom="10dp"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/Location"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/txtv_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:cursorVisible="false"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/dob"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="12dp"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/txtv_blood_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:cursorVisible="false"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Blood Group"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="12dp"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Gender"
+                android:textColorHint="@color/light_grey"
+                android:textSize="12dp"/>
+
+
+
+            <RadioGroup
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:id="@+id/radioSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:padding="10dp"
+                    android:text="@string/male"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/female"
+                    android:textSize="12sp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/Marital_status"
+                android:textColorHint="@color/light_grey"
+                android:textSize="12dp" />
+
+            <RadioGroup
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:id="@+id/readio_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:layout_weight="1"
+                    android:id="@+id/single_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unmarride"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:id="@+id/marride"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/marride" />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

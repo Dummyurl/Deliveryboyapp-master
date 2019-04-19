@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/my_gradient_back"
+        android:text="@string/sign_here_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_size"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/weight_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="@string/hint_cancel"
+            android:layout_margin="10dp"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="@dimen/weight_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="@string/hint_clear"
+            android:layout_margin="10dp"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"  />
+
+        <Button
+            android:id="@+id/getsign"
+            android:layout_width="@dimen/weight_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="@string/hint_save"
+            android:layout_margin="10dp"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/gray_stroke">
+
+    <LinearLayout
+        android:id="@+id/canvasLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@color/CanvasBackground"
+        android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/signature_pad_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/White">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/signature_pad_description"
+            android:layout_marginBottom="8dp"
+            android:background="@color/DarkGray" />
+
+        <TextView
+            android:id="@+id/signature_pad_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/agreement"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

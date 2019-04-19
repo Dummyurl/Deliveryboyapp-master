@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:text="Select Cancelation Reason"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/Gray"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="2dp">
+
+
+        <!-- <LinearLayout
+             android:id="@+id/layout_wallet"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:weightSum="1">
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 text
+                 android:text="Use Ziffy Wallet Balance(200.0)"/>
+
+         </LinearLayout>-->
+
+        <RadioGroup
+            android:id="@+id/radio_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+           android:padding="5dp">
+
+
+            <RadioButton
+                android:id="@+id/cash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:padding="5dp"
+                android:text="Product unsatisfactory"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/payUmoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="5dp"
+                android:text="Third party cancellation"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <RadioButton
+                android:id="@+id/wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="5dp"
+                android:text="Product not required"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <RadioButton
+                android:id="@+id/bhim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="5dp"
+                android:text="Delivery date missed"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <RadioButton
+                android:id="@+id/other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="5dp"
+                android:text="Alternative found"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <RadioButton
+                android:id="@+id/other1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="5dp"
+                android:text="Invoice written off"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <RadioButton
+                android:id="@+id/other2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="5dp"
+                android:text="Fraudulent transaction"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <RadioButton
+                android:id="@+id/other3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="5dp"
+                android:text="Payment declined"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <RadioButton
+                android:id="@+id/other4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="5dp"
+                android:text="Subscription cancelled"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <RadioButton
+                android:id="@+id/other5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Product not available"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <RadioButton
+                android:id="@+id/other6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="5dp"
+                android:text="Other"
+                android:textSize="13sp"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/Gray"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="SUBMIT"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/White"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/txtv_cancel_req"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+   >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/fb_button"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:id="@+id/imgv_status"
+            android:padding="3dp"
+            android:layout_centerInParent="true"
+            android:alpha="0.5"
+            android:visibility="gone"/>
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:weightSum="3"
+            android:id="@+id/head">
+
+            <TextView
+                android:id="@+id/txtv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+                android:gravity="center_horizontal|left"
+                android:paddingBottom="2dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="2dp"
+                android:text="Date : 13-6-2017 01.00 PM"
+                android:textColor="@color/White"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.3"
+                android:gravity="left"
+                android:padding="2dp"
+                android:src="@drawable/checkout" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.7"
+                android:gravity="left"
+                android:text="Delivery By Ziffytech"
+                android:textColor="@color/White"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_below="@+id/head">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtv_cstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text="Customer name : XYZ"
+                    android:textColor="@color/DarkGray"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:text="Address : Flat-6,Shyam Building,Utkarsh Society,Nr. Katraj Lake,Katraj"
+                    android:textColor="@color/DarkGray"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtv_timeslot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Delivery Time Slot : 12.00 AM to 01.00 AM"
+                    android:textColor="@color/DarkGray"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/txtv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|left"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Total : Rs.470/- "
+                    android:textColor="@color/DimGray"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtv_orderid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="2dp"
+                    android:text="Order ID : 123456"
+                    android:textColor="@color/DarkGray"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/parentlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:weightSum="3"
+                    android:layout_weight="1">
+
+
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_call"
+                        android:layout_weight="1"
+                        android:id="@+id/imgv_call"
+                        android:padding="3dp"/>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_explore_tool"
+                        android:layout_weight="1"
+                        android:id="@+id/imgv_map"
+                        android:padding="3dp"/>
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/txtv_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="View"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_fingerprint"
+                        android:layout_weight="1"
+                        android:id="@+id/imgv_accept"
+                        android:padding="3dp"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:text="Wallet Payable Ammount  :  "
+            android:textColor="@color/DimGray"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="Total Discounted Ammount  :  "
+            android:textColor="@color/DimGray"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="Total Paybale Ammount  :  "
+            android:textColor="@color/DimGray"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/OrangeRed"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtv_view_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="View Details"
+                android:textColor="@color/White"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

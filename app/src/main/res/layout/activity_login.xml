@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/my_gradient_back">
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/appback"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:src="@drawable/deliveryboy"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/rel_usr_details"
+        android:layout_alignStart="@+id/rel_signin_btn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/rel_usr_details"
+        android:layout_above="@+id/rel_usr_details1"
+        android:background="@drawable/bg_round_rect"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username/Email"
+            android:textSize="12dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/edt_login_username"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/rel_usr_details1"
+        android:background="@drawable/bg_round_rect"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="12dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/edt_login_password"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_orange_rec"
+        android:padding="6dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/rel_signin_btn"
+        android:layout_below="@+id/rel_usr_details1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textColor="@color/White"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_signin_btn"
+        android:textSize="13dp"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot Password !! Click Here !!"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:id="@+id/txtv_forgot_password"/>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/logo"
+        android:layout_alignLeft="@+id/rel_usr_details"
+        android:layout_alignStart="@+id/rel_usr_details"
+        android:orientation="horizontal"
+        android:id="@+id/lay_sign"
+        android:visibility="gone">-->
+
+
+    <!-- <com.facebook.login.widget.LoginButton
+         android:id="@+id/btnfb"
+         android:layout_gravity="center"
+         android:layout_centerHorizontal="true"
+         android:layout_width="150dp"
+         android:layout_height="150dp"
+         android:layout_weight="1"
+         android:padding="2dp"
+         android:visibility="gone"/>
+
+ </LinearLayout>-->
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Developed By : Ziffytech Digital Healthcare PVT.LTD."
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+       />
+
+
+
+</RelativeLayout>
+
+    </LinearLayout>

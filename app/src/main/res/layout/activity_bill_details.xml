@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteSmoke"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/my_gradient_back"
+        android:text="@string/bill_details_title"
+        android:textColor="@color/White"
+        android:textSize="@dimen/title_size"
+        android:gravity="center"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_block"
+        android:background="@color/White"
+        android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lin_hori"
+        android:layout_margin="5dp"
+        android:background="@drawable/gray_stroke">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtv_orderid"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Id : "
+                android:textColor="@color/DimGray"
+                android:textSize="12dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DarkGray"></View>
+
+            <TextView
+                android:id="@+id/txtv_timeslot"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Time and Date : "
+                android:textColor="@color/DimGray"
+                android:textSize="12dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DarkGray"></View>
+            <TextView
+                android:id="@+id/txtv_address"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address : "
+                android:textColor="@color/DimGray"
+                android:textSize="12dp"
+                android:maxLength="45"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DarkGray"></View>
+            <TextView
+                android:id="@+id/txtv_mobile"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number : "
+                android:textColor="@color/DimGray"
+                android:textSize="12dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DarkGray"></View>
+            <TextView
+                android:id="@+id/txtv_items_count"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items In Order : "
+                android:textColor="@color/DimGray"
+                android:textSize="12dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DarkGray"></View>
+            <TextView
+                android:id="@+id/txtv_payment_mode"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Mode : "
+                android:textColor="@color/DimGray"
+                android:textSize="12dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DarkGray"></View>
+
+            <TextView
+                android:id="@+id/txtv_delivery_chrg"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery charges : "
+                android:textColor="@color/DimGray"
+                android:textSize="12dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/DarkGray"></View>
+
+            <TextView
+                android:id="@+id/txtv_total"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total : "
+                android:textColor="@color/DimGray"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox_text"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/getSign"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_gradient_back"
+        android:padding="@dimen/button_padding"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textColor="@android:color/white"
+        android:text="@string/get_signature_text"
+        android:textSize="12dp"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:src="@android:color/transparent" />
+
+
+</LinearLayout>
